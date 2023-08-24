@@ -1,0 +1,199 @@
+.btn{
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    float: right;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  rgb(10, 221, 221);/*rgba(251, 21, 232, 0.93);*//* rgb(12, 240, 122);*/
+    color: whitesmoke;
+    border:0px solid black;
+    
+}
+.headverse{
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;/*Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif*/;
+    display: inline;
+    font-size: 30px;
+    color:  rgb(10, 221, 221);
+    font-weight: bold;
+    margin-right:60%;
+ 
+}
+.head{
+    
+   margin: 20px 40px;
+    position:-webkit-sticky ;
+    position: sticky;
+   /* position: fixed;*/
+    top: 0;
+    background-color: white;
+   /* z-index: 5;*/
+}
+.inputbox{
+    height: 30px;
+    width: 300px;
+}
+.bgmcolr{
+    background-color:rgba(0,0,0,.75);
+}
+.signInForm{
+  /*  display: block;*/
+    left:0;
+    top:0px;
+    width:100%;
+    height:100%;
+    position:fixed;
+  /*  border: 1px soild black;*/
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    
+     
+}
+.signinbtn{
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  rgb(10, 221, 221);/*rgba(251, 21, 232, 0.93);*//* rgb(12, 240, 122);*/
+    color: whitesmoke;
+    border:0px solid black;
+}
+.formBorder{
+    position: fixed;
+    height:300px;
+    width:450px;
+    top:100px;
+    left:25%;
+    background-color: whitesmoke;
+    padding:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    margin: 0px;
+    z-index:2;
+    border-radius: 20px;
+}
+.banner{
+    /* background-color: purple; for rotation*/
+    background-color: black;
+     height:300px;
+     width:100%;
+ }
+ /*
+ .bannercontent{
+     color: white;
+     text-align: center;
+     padding: 5px 70px;
+     font-size: 40px;
+     font-family: sans-serif;
+ }*/
+ .centerimg{
+     display: block;
+     margin-left: auto;
+   margin-right: auto;
+ }
+ .lookingartist{
+     margin-left: 100px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;        
+ }
+ /*
+ rotation animation
+ @keyframes rotateAnimation {
+     from {transform: rotateY(-45deg);}
+     to {transform: rotateY(45deg);}
+ }
+ div>.square {
+     perspective: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     position: absolute;
+    height:150px;
+    left: 35%;
+    top:20%;
+    animation: rotateAnimation infinite 2s linear;
+ 
+ }
+ 
+ .square {
+     width: 200px;
+     /*height: 100px;*/
+     /*background: grey;*/
+     
+    /* font-size: 200px;
+     transform: rotateY(45deg);
+     animation: rotateAnimation 1s linear infinite;
+     text-shadow: 0 1px 0  rgb(245, 56, 245), 0 2px 0  rgb(245, 56, 245),
+     0 3px 0  rgb(245, 56, 245), 0 4px 0  rgb(245, 56, 245),
+     0 5px 0  rgb(245, 56, 245), 0 6px 0  rgb(245, 56, 245),
+     0 7px 0  rgb(245, 56, 245), 0 8px 0  rgb(245, 56, 245),
+     0 9px 0  rgb(245, 56, 245), 0 10px 0  rgb(245, 56, 245),
+     0 11px 0  rgb(245, 56, 245), 0 12px 0  rgb(245, 56, 245),
+     0 20px 30px rgba(245, 56, 245,0.5);
+     opacity: .8;
+     color: purple;
+    
+     
+ 
+ }
+ */
+ .container{
+     display: grid;
+     grid-template-columns: auto auto auto ;
+     padding-left: 100px;
+    /* padding-right: 100px;*/
+ }
+ .item{
+     padding-bottom: 20px;
+     width:100px;
+ }
+ .item>img{
+     width:200px;
+     height:250px;
+     border: 1px soild black;
+    /* padding:10px;*/
+     border-radius: 30px 30px 0 0;
+    /* padding-bottom: 0px;
+     padding-left: 0px;*/
+   
+ 
+ }
+ .name{
+     padding-right: 60px;
+    /* border:1px solid black;*/
+     background-color: whitesmoke;
+     width:134px;
+     margin:0px;
+     height: 50px;
+     border-radius: 10px;
+     text-align: center;
+     padding-top: 30px ;
+     padding-left: 10px;
+     margin-left: 0px;
+     margin-right: 10px;
+    
+ }
+ @media only screen and (max-width: 600px) {
+     .container{
+       
+         grid-template-columns: auto auto ;
+         padding-left: 30px;
+ 
+     }
+     .name{
+        margin-left: 0px;
+     }
+     .item{
+        width:200px;
+        /*padding-right: 60px;*/
+     }
+     .headverse{
+        padding-right: 0px;
+        position: sticky;
+     }
+    
+     
+   }
