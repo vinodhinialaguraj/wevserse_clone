@@ -10,6 +10,25 @@
     border:0px solid black;
     
 }
+.btn2{
+    width:100px;
+    height:40px;
+    border-radius: 50%;
+    float: right;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  rgb(10, 221, 221);/*rgba(251, 21, 232, 0.93);*//* rgb(12, 240, 122);*/
+    color: whitesmoke;
+    border:0px solid black;
+}
+.Armyimg{
+    
+   width:30px;
+}
+.account{
+    width:100px;
+
+}
 .headverse{
     font-family: Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif;/*Pretendard,-apple-system,BlinkMacSystemFont,Helvetica,Arial,Dotum,sans-serif*/;
     display: inline;
