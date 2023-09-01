@@ -12,10 +12,19 @@ function Edit(props){
     console.log(word);
     //props.onSubmit(word);
   }
+  
  const handleSubmit=(id)=>{
  
   props.setTrigger(false);
-  props.onSubmit(word, img);
+  if(word.trim()!==''){
+    props.onSubmit(word);
+  }
+ 
+  if(img!==null){
+    props.getImg(img);
+  }
+ 
+ 
  }
  const handleMultipleImages =(e)=>{
   const selectedFile = e.target.files[0];
@@ -30,6 +39,7 @@ function Edit(props){
         <textarea onChange={(e)=>handleedit(e)} className="editor">{items}</textarea>
         
         <button onClick={()=>handleSubmit(props.id)} className="addbtnsub">button</button>
+       
         <input type="file" onChange={handleMultipleImages} multiple/>
         </div>
      

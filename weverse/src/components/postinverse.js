@@ -10,12 +10,32 @@ function Postinverse(props){
    const image = props.image;
   // console.log(image);
     const[fullword, setFullword]=useState(txtsedit);
-    const [img, setimg]= useState(null);
+    const [img, setimg]= useState(image);
     const setobj= props.setmyObject;
     const id = props.id;
-    const getData=(data, img)=>{
+    const getimg=(img)=>{
+      console.log("img")
+     console.log(img);
+     setimg(img);
+    }
+    const getData=(data)=>{
       setFullword(data);
-      setimg(img);
+     
+    
+     
+    /*  if(fullword.trim()===''){
+        return;
+       }
+      
+         const updatedItems = items.map((todo) =>
+       todo.id === id ? { ...todo, 
+         text: fullword,
+       image: img } : todo
+     );
+     
+     props.setmyObject(updatedItems)*/
+      
+  
     }
 
     const deleteTodo = (id) => {
@@ -25,31 +45,21 @@ function Postinverse(props){
 
       };
       const editTodo = (id) => {
-        //console.log({editedText});
-      //  const updatedItems = items.map((todo) =>
-      //  todo.id === id ? { ...todo, text: fullword } : todo
-     // );
-        //props.setmyObject(updatedItems)
-      //setValue(updatedItems)
+       
         setTxt(true);
         
       };
-     /* const updateimg=(id)=>{
-        const updatedItemsimg = items.map((todo) =>
-        todo.id === id ? { ...todo, image: img } : todo
-
-      );
-      props.setmyObject(updatedItemsimg) ;
-      }*/
+   
       const updateonclick=(id)=>{
      //   updateimg(id);
         if(fullword.trim()===''){
          return;
         }
+       
           const updatedItems = items.map((todo) =>
         todo.id === id ? { ...todo, 
           text: fullword,
-        image: img } : todo
+          image: img, } : todo
       );
       
       props.setmyObject(updatedItems)
@@ -64,13 +74,13 @@ function Postinverse(props){
  console.log("idk wats happenin");
         return(
             <div >
-                <Edit trigger={txt} setTrigger={setTxt} onSubmit={getData} texts={txtsedit}  />
+                <Edit trigger={txt} setTrigger={setTxt} onSubmit={getData} texts={txtsedit} id={id} getImg={getimg}  />
                 <div className='postverse'>
                   <div className='postversebtn'>
                  <li key={props.id}>
             <button onClick={()=>editTodo(props.id)}>edit</button>
            
-            <button onClick={()=>updateonclick(props.id)}>update</button>
+           <button onClick={()=>updateonclick(props.id)}>update</button>
             
             <button onClick={()=>deleteTodo(props.id)}>delete</button>
             </li>
@@ -78,9 +88,9 @@ function Postinverse(props){
             
            
            <div className='posting'>
-            {props.text}
+            {fullword}
            </div>
-           <img src={props.image} className="imageview" />
+           <img src={img} className="imageview" />
            </div>
            </div>
         
