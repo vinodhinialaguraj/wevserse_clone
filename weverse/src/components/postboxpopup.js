@@ -22,6 +22,9 @@ function PostboxPopup(props){
         if (selectedFile) {
             setImages(URL.createObjectURL(selectedFile));
           }
+          else {
+            setImages(null); // Clear the selected image if no file is selected
+          }
        //setImages(selectedFIles);
        setshowimg(true);
      }

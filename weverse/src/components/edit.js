@@ -12,6 +12,9 @@ function Edit(props){
     console.log(word);
     //props.onSubmit(word);
   }
+  const handleEditclose=()=>{
+    props.setTrigger(false);
+  }
   
  const handleSubmit=(id)=>{
  
@@ -31,11 +34,15 @@ function Edit(props){
   if (selectedFile) {
       setImg(URL.createObjectURL(selectedFile));
     }
+    else {
+      setImg(null); // Clear the selected image if no file is selected
+    }
   }
   if(props.trigger){
     return(
       <div>
         <div className="editbox">
+          <button onClick={()=>handleEditclose()} className='closeEdit'>X</button>
         <textarea onChange={(e)=>handleedit(e)} className="editor">{items}</textarea>
         
         <button onClick={()=>handleSubmit(props.id)} className="addbtnsub">button</button>

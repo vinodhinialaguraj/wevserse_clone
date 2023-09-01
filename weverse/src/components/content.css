@@ -73,18 +73,19 @@
 }
 .editbox{
     width:70%;
-    height: 300px;
+    height: 500px;
     overflow: auto;
     border-radius: 20px;
     background-color: antiquewhite;
-   position: absolute;
+    
+   position: fixed;
    top:10px;
    left: 10%;
-   z-index: 3;
+   z-index: 5;
 }
 .editor{
     width:80%;
-    height: 240px;
+    height: 400px;
     overflow: auto;
     border-radius: 10px;
     background-color: antiquewhite;
@@ -94,7 +95,7 @@
    z-index: 3;
 }
 .addbtnsub{
-    margin-top:260px;
+    margin-top:380px;
     margin-left:50%;
    
     width:90px;
@@ -141,4 +142,10 @@
    width: 200px;
     z-index: 3;
     position: relative;
+}
+.closeEdit{
+    margin-top: 2%;
+    margin-left: 90%;
+    width:40px;
+    height:25px;
 }

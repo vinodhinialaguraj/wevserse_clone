@@ -1,6 +1,6 @@
 import './content.css';
 import Edit from'./edit';
-import PostboxPopup from './postboxpopup';
+//import Imagespost from './postingpic';
 import { useState} from 'react';
 
 function Postinverse(props){
@@ -11,13 +11,16 @@ function Postinverse(props){
   // console.log(image);
     const[fullword, setFullword]=useState(txtsedit);
     const [img, setimg]= useState(image);
-    const setobj= props.setmyObject;
+    const images= props.image;
     const id = props.id;
+    //const [showpost , setShowpost]= useState(false);  
     const getimg=(img)=>{
       console.log("img")
      console.log(img);
+   // setShowpost(true);
      setimg(img);
     }
+    
     const getData=(data)=>{
       setFullword(data);
      
@@ -68,7 +71,7 @@ function Postinverse(props){
         //console.log(value);
       
       }
-      
+     
  if(props.trigger){
 
  console.log("idk wats happenin");
@@ -80,7 +83,7 @@ function Postinverse(props){
                  <li key={props.id}>
             <button onClick={()=>editTodo(props.id)}>edit</button>
            
-           <button onClick={()=>updateonclick(props.id)}>update pic</button>
+           <button onClick={()=>updateonclick(props.id)}>update content</button>
             
             <button onClick={()=>deleteTodo(props.id)}>delete</button>
             </li>
@@ -90,7 +93,9 @@ function Postinverse(props){
            <div className='posting'>
             {fullword}
            </div>
-           <img src={props.image} className="imgview" />
+           {img && (
+          <img src={props.image} className='imgview' />
+        )}
            </div>
            </div>
         

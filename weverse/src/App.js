@@ -9,11 +9,16 @@ import Mainpage from './components/mainpage';
 import Content from './components/content';
 import Artistimages from './components/artistpage'
 import { Route, Routes } from 'react-router-dom';
-import PreviewMultipleImages from './components/PreviewMultipleImages';
+//import PreviewMultipleImages from './components/PreviewMultipleImages';
 function App() {
   return (
     <div className="App">
-  <Content />
+   <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/mainpage" element={<Mainpage/>}/>
+        <Route path ="/feed" element={<Content/>}/>
+        <Route path="/artist" element={<Artistimages/>}/>
+      </Routes>
     </div>
   );
 }
