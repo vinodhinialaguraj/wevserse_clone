@@ -80,7 +80,7 @@ function Postinverse(props){
                  <li key={props.id}>
             <button onClick={()=>editTodo(props.id)}>edit</button>
            
-           <button onClick={()=>updateonclick(props.id)}>update</button>
+           <button onClick={()=>updateonclick(props.id)}>update pic</button>
             
             <button onClick={()=>deleteTodo(props.id)}>delete</button>
             </li>
@@ -90,7 +90,7 @@ function Postinverse(props){
            <div className='posting'>
             {fullword}
            </div>
-           <img src={img} className="imageview" />
+           <img src={props.image} className="imgview" />
            </div>
            </div>
         
