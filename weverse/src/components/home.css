@@ -20,6 +20,7 @@
     background-color:  rgb(10, 221, 221);/*rgba(251, 21, 232, 0.93);*//* rgb(12, 240, 122);*/
     color: whitesmoke;
     border:0px solid black;
+    
 }
 .Armyimg{
     
@@ -35,7 +36,8 @@
     font-size: 30px;
     color:  rgb(10, 221, 221);
     font-weight: bold;
-    margin-right:60%;
+    padding-right: 60%;
+   
  
 }
 .head{
@@ -49,8 +51,8 @@
    /* z-index: 5;*/
 }
 .inputbox{
-    height: 30px;
-    width: 300px;
+    height: 40px;
+    width: 50%;
 }
 .bgmcolr{
     background-color:rgba(0,0,0,.75);
@@ -82,10 +84,10 @@
 }
 .formBorder{
     position: fixed;
-    height:300px;
-    width:450px;
+    height:50%;
+    width:80%;
     top:100px;
-    left:25%;
+    left:10%;
     background-color: whitesmoke;
     padding:20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -196,10 +198,13 @@
     
  }
  @media only screen and (max-width: 600px) {
+    .lookingartist{
+        margin-left: 30px;
+    }
      .container{
        
-         grid-template-columns: auto auto ;
-         padding-left: 30px;
+         grid-template-columns: auto ;
+         padding-left: 60px;
  
      }
      .name{
@@ -210,9 +215,15 @@
         /*padding-right: 60px;*/
      }
      .headverse{
+        width:30px;
         padding-right: 0px;
-        position: sticky;
+       /* position: sticky;*/
      }
-    
+    .btn{
+        margin-top:0px;
+    }
+    .centerimg{
+        width: 100%;
+    }
      
    }

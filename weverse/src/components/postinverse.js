@@ -83,7 +83,7 @@ function Postinverse(props){
                  <li key={props.id}>
             <button onClick={()=>editTodo(props.id)}>edit</button>
            
-           <button onClick={()=>updateonclick(props.id)}>update content</button>
+           <button onClick={()=>updateonclick(props.id)}>update</button>
             
             <button onClick={()=>deleteTodo(props.id)}>delete</button>
             </li>

@@ -14,7 +14,7 @@ function Navbar(){
             <nav>
             <ul className="navlist">
             <li onClick={handleFeed}>Feed</li> 
-            <li>Media</li> 
+            
             <li onClick={handleArtist} >Artist</li> 
             </ul>
             
